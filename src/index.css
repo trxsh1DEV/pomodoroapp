@@ -1,13 +1,67 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Ubuntu', 'Roboto', 'Helvetica Neue', sans-serif;
+  background-color: #41e1ba;
+  /* background-color: #28d6e2; */
+  transition: background-color 300ms ease-in-out;
+  line-height: 1.5;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+}
+.working {
+  background: #Ef5d50;
+}
+
+.hidden {
+  display: none;
+}
+
+.pomodoro {
+  background: #fff;
+  margin: 50px 20px;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 5px 5px 15px rgba(0,0,0,.6);
+}
+
+.pomodoro h2 {
+  font-size: 2em;
+  text-align: center;
+}
+.pomodoro .timer{
+  font-size: 6rem;
+  text-align: center;
+}
+
+.pomodoro .controls{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.pomodoro button {
+  background: #41e1ba;
+  border: none;
+  cursor: pointer;
+  padding: 10px 25px;
+  color: #000;
+  transition: background-color 400ms ease-in-out;
+  margin: 20px auto;
+}
+
+.working .pomodoro button {
+  background: #Ef5d50;
+  color: #fff;
+}
+
+.pomodoro .details {
+  margin: 20px 0;
 }
