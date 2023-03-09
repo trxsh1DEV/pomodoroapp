@@ -6,7 +6,7 @@ function App() {
       <PomodoroTimer
         PomodoroTime={1500} // 25mnt
         shortRestTime={300} // 5mnt (shorttime) descanso curto
-        longRestTime={5} // 15mnt desconto longo
+        longRestTime={900} // 15mnt desconto longo
         cycles={4} // a cada 4 ciclos
       />
     </div>
